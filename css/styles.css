@@ -97,7 +97,6 @@ h3
     padding: 1rem 0;
     display: flex;
     justify-content: center;
-    /*gap: 2rem; /*separacion forma nueva*/
 }
 .navegacion__enlace
 {
@@ -241,88 +240,53 @@ h3
         column-gap: 2rem;
     }
 }
-.formulario
-{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
-.formulario__campo
-{
-    border: 1rem solid var(--primario-oscuro);
-    background-color: transparent;
-    color: var(--gris);
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem;
-}
-.formulario__submit
-{
-    background-color: var(--secundario);
-    border: none;
-    font-size: 2rem;
-    font-family: var(--fuente-principal);
-    padding: 2rem;
-    transition: background-color .3s ease;
-    grid-column: 1 / 3;
-}
-.formulario__submit:hover
-{
-    cursor: pointer;
-    background-color: var(--secundario-oscuro);
-}
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--blanco);
-    color: var(--negro);
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    display: none;
-    text-align: center;
-    z-index: 1000;
-}
 
-.popup__mensaje {
-    color: #4e4e4e;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.popup__boton {
-    display: inline-block;
-    padding: 1rem 2rem;
-    font-size: 1.6rem;
-    color: var(--gris);
-    background-color: var(--primario);
-    border: none;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.popup__boton:hover {
-    background-color: var(--primario-oscuro);
-}
-
-.formulario__submit:focus ~ .popup {
-    display: block;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 999;
-}
-
-.formulario__submit:focus ~ .overlay {
-    display: block;
+/* MEDIA QUERY PARA MÓVILES */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.4rem;
+    }
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+    .producto__nombre {
+        font-size: 2.8rem;
+    }
+    .producto__precio {
+        font-size: 2rem;
+    }
+    .footer__texto {
+        font-size: 1.8rem;
+    }
+    .navegacion__enlace {
+        font-size: 2rem;
+    }
+    img {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .grafico {
+        min-height: 20rem;
+        background-size: contain;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .bloques {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .contenedor {
+        padding: 0 1rem;
+    }
 }
