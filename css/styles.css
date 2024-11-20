@@ -1,12 +1,11 @@
 :root
 {
-    --primario:#fe8036;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-    
-    --primario-oscuro: #96b5f9;
-    --secundario: #ffffff;
+    --primario:#ffffff;
+ 
+    --primario-oscuro: #ff7124;
+    --secundario: #363636;
     --secundario-oscuro: rgb(233,287,2);
-    --blanco: #FFF;
+    --blanco: #ffffff;
     --negro: #000;
     --fuente-principal:'Staatliches', cursive;
 }
@@ -31,7 +30,7 @@ p
 {
     font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--blanco);
+    color: var(--negro);
 }
 a
 {
@@ -398,7 +397,28 @@ h3
         column-gap: 2rem;
     }
 }
+@media (max-width: 768px) {
+    .formulario {
+        display: block; /* Colocar los campos en bloque */
+        width: 100%;
+        margin-top: 2rem; /* Un pequeño margen superior */
+    }
 
+    .formulario__campo {
+        width: 100%; /* Los campos ocuparán todo el ancho */
+        margin-bottom: 1rem; /* Espacio entre los campos */
+        padding: 1rem; /* Añadir algo de espacio interno */
+        font-size: 1.8rem; /* Ajustar el tamaño de la fuente */
+        text-align: center;
+    }
+
+    .formulario__submit {
+        width: 100%; /* Hacer el botón del mismo tamaño */
+        padding: 1.5rem; /* Añadir más espacio interno */
+        font-size: 2rem; /* Ajustar tamaño de texto */
+        margin-top: 1.5rem; /* Espacio superior */
+    }
+}
 /* MEDIA QUERY PARA MÓVILES */
 @media (max-width: 768px) {
     body {
@@ -447,4 +467,5 @@ h3
     .contenedor {
         padding: 0 1rem;
     }
+    
 }
