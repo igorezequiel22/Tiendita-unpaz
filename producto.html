@@ -21,6 +21,8 @@
         <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
         <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
         <a class="navegacion__enlace" href="https://app-sorteos.com/play/s784trLa"> Trivia</a>
+        <a class="navegacion__enlace" href="plan.html">Plan de estudios</a>
+
     </nav>
       <main class="contenedor">
         <h1>Remera con logo de UNPAZ</h1>
@@ -29,25 +31,60 @@
             <div class="camisa__contenido">
             <p>La remera "UNPAZ" no solo es cómoda, sino también un símbolo de pertenencia y orgullo universitario. Ya sea para asistir a clases o disfrutar de una salida casual, es una prenda básica que no puede faltar en tu armario.</p>
             <form class="formulario">
-            <select class="formulario__campo" name="" id="">
-                        <option disabled selected>-- Seleccionar Talla --</option>
-                        <option>Chica</option>
-                        <option>Mediana</option>
-                        <option>Grande</option>
-                    </select>
-                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
-                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
-
-                    <div class="overlay"></div>
-                    <div class="popup">
-                        <p class="popup__mensaje">¡Añadido con exito!</p>
-                        <a class="popup__boton" href="index.html"> Cerrar</a>
-                    </div>
+                <select class="formulario__campo" name="" id="talla">
+                    <option disabled selected>-- Seleccionar Talla --</option>
+                    <option>Chica</option>
+                    <option>Mediana</option>
+                    <option>Grande</option>
+                </select>
+                <input class="formulario__campo" type="number" placeholder="Cantidad" id="cantidad" min="1">
+                <button class="formulario__submit" type="button" id="agregarCarrito" disabled>Agregar al Carrito</button>
+            </form>
+            
+            <div class="overlay" id="overlay"></div>
+            <div class="popup" id="popup">
+                <p class="popup__mensaje">¡Añadido con éxito!</p>
+                <a class="popup__boton" href="index.html" id="cerrarPopup">Cerrar</a>
+            </div>
                  </div> 
                </div>
           </main>
        <footer class="footer">
         <p class="footer__texto">Universidad Nacional de José C. Paz.</p>
     </footer>
+    <script>
+        // Selección de elementos
+        const talla = document.getElementById('talla');
+        const cantidad = document.getElementById('cantidad');
+        const agregarCarrito = document.getElementById('agregarCarrito');
+        const overlay = document.getElementById('overlay');
+        const popup = document.getElementById('popup');
+        const cerrarPopup = document.getElementById('cerrarPopup');
+    
+        // Habilitar botón si ambos campos están completos
+        function validarFormulario() {
+            if (talla.value !== '-- Seleccionar Talla --' && cantidad.value > 0) {
+                agregarCarrito.disabled = false;
+            } else {
+                agregarCarrito.disabled = true;
+            }
+        }
+    
+        talla.addEventListener('change', validarFormulario);
+        cantidad.addEventListener('input', validarFormulario);
+    
+        // Mostrar popup al agregar al carrito
+        agregarCarrito.addEventListener('click', () => {
+            overlay.style.display = 'flex';
+            popup.style.display = 'block';
+        });
+    
+        // Ocultar popup y redirigir al index
+        cerrarPopup.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            popup.style.display = 'none';
+        });
+    </script>
+    
 </body>
 </html>
