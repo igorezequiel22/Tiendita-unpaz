@@ -66,20 +66,12 @@ h1 {
     background-color: #1A5276;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 329px) and (max-width: 768px) {
+    /* Your styles here */
+}
     .materia {
-        width: 150px;
+        width: 100px;
         padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .materia {
-        width: 100%;
-        margin-bottom: 20px;
+        align-content: center;
     }
 
-    .fila {
-        flex-direction: column;
-    }
-}
