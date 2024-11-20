@@ -87,6 +87,31 @@ h3
     text-align: center;
     font-family: var(--fuente-principal);
     font-size: 2.2rem;
+    color: #ffffff;
+}
+.instagram-icons {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.instagram-icon {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.instagram-icon i {
+    font-size: 40px;
+    color: #ff7519;
+}
+
+.instagram-icon p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 /*NAVEGACIÓN*/
@@ -131,6 +156,7 @@ h3
 .producto__nombre
 {
     font-size: 4rem;
+    color: #ffffff;
 }
 .producto__precio
 {
@@ -193,6 +219,10 @@ h3
 {
     margin: 0;
 }
+.bloque__imagen
+{
+    width: 40%;
+}
 
 .formulario
 {
@@ -211,7 +241,7 @@ h3
 }
 .formulario__submit
 {
-    background-color: var(--secundario);
+    background-color: var(--primario-oscuro);
     border: none;
     font-size: 2rem;
     font-family: var(--fuente-principal);
@@ -250,7 +280,7 @@ h3
     padding: 1rem 2rem;
     font-size: 1.6rem;
     color: var(--gris);
-    background-color: var(--primario);
+    background-color: var(--primario-oscuro);
     border: none;
     border-radius: 0.5rem;
     text-decoration: none;
