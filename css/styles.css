@@ -92,9 +92,10 @@ h3
 .instagram-icons {
     color: #000;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-right: 8%;
 }
 
 .instagram-icon {
