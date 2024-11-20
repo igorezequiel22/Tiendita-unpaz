@@ -152,10 +152,8 @@ h3
 .producto
 {
     background-color: var(--primario-oscuro);
-    padding: 1rem;
     border: 1px solid #ccc; /* Borde opcional */
     border-radius: 15px; /* Bordes redondeados */
-    overflow: hidden; /* Asegura que el contenido no se salga de los bordes redondeados */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /
 }
 .producto__nombre
@@ -431,20 +429,85 @@ h3
     margin: 0;
 }
 
-/* MEDIA QUERIES PARA TALLE, CANTIDAD Y BOTÓN */
+/*PÁGINA PRODUCTO*/
+@media (min-width: 768px) 
+{
+    .camisa
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
 @media (max-width: 768px) {
     .formulario {
-        grid-template-columns: 1fr;
+        display: block; /* Colocar los campos en bloque */
+        width: 100%;
+        margin-top: 2rem; /* Un pequeño margen superior */
     }
 
     .formulario__campo {
-        font-size: 1.8rem;
-        padding: 1.2rem;
+        width: 100%; /* Los campos ocuparán todo el ancho */
+        margin-bottom: 1rem; /* Espacio entre los campos */
+        padding: 1rem; /* Añadir algo de espacio interno */
+        font-size: 1.8rem; /* Ajustar el tamaño de la fuente */
+        text-align: center;
     }
 
     .formulario__submit {
-        font-size: 1.6rem;
-        padding: 1.5rem;
-        grid-column: 1 / 2;
+        width: 100%; /* Hacer el botón del mismo tamaño */
+        padding: 1.5rem; /* Añadir más espacio interno */
+        font-size: 2rem; /* Ajustar tamaño de texto */
+        margin-top: 1.5rem; /* Espacio superior */
     }
+}
+/* MEDIA QUERY PARA MÓVILES */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.4rem;
+    }
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+    .producto__nombre {
+        font-size: 2.8rem;
+    }
+    .producto__precio {
+        font-size: 2rem;
+    }
+    .footer__texto {
+        font-size: 1.8rem;
+    }
+    .navegacion__enlace {
+        font-size: 2rem;
+    }
+    img {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .grafico {
+        min-height: 20rem;
+        background-size: contain;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .bloques {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .contenedor {
+        padding: 0 1rem;
+    }
+    
 }
