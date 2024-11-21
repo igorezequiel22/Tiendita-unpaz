@@ -31,7 +31,7 @@ h1 {
 }
 
 .materia {
-    background-color: #5DADE2;
+    background-color: #005b97;
     color: white;
     padding: 15px;
     border-radius: 5px;
@@ -63,7 +63,7 @@ h1 {
 }
 
 .boton-volver a button:hover {
-    background-color: #1A5276;
+    background-color: #003a5f;
 }
 
 @media (min-width: 329px) and (max-width: 768px) {
