@@ -508,5 +508,19 @@ h3
     .contenedor {
         padding: 0 1rem;
     }
+    .mapa__contenedor {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        overflow: hidden;
+    }
+    
+    .mapa__contenedor iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 100%; 
+    }
     
 }

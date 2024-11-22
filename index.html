@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +12,22 @@
 </head>
 <body>
   <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        <a href="index.html" aria-label="Ir a la página principal">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo de Tiendita UNPAZ">
         </a>
     </header>
     <nav class="navegacion">
-        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
-        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
-        <a class="navegacion__enlace" href="https://app-sorteos.com/play/s784trLa"> Trivia</a>
-        <a class="navegacion__enlace" href="plan.html">Plan</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html" tabindex="1">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html" tabindex="2" aria-label="Más sobre nosotros">Nosotros</a>
+        <a class="navegacion__enlace" href="https://app-sorteos.com/play/s784trLa" tabindex="3" aria-label="Jugar a Trivia">Trivia</a>
+        <a class="navegacion__enlace" href="plan.html" tabindex="4" aria-label="Ver plan de precios">Plan</a>
     </nav>
     <main class="contenedor">
         <h1>Nuestros Productos</h1>
         <div class="grid">
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/1.jpg" alt="imagen camisa unpaz">
+                <a href="producto.html" tabindex="5" aria-label="Ver producto Camisa UNPAZ">
+                    <img class="producto__imagen" src="img/1.jpg" alt="Camisa con el logotipo de UNPAZ">
                     <div class="producto__informacion">
                         <p class="producto__nombre">UNPAZ</p>
                         <p class="producto__precio">$25000</p>
@@ -36,8 +35,8 @@
                 </a>
             </div> 
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/2.jpg" alt="imagen camisa shopify">
+                <a href="producto.html" tabindex="6" aria-label="Ver producto Camisa Shopify">
+                    <img class="producto__imagen" src="img/2.jpg" alt="Camisa con el logotipo de Shopify">
                     <div class="producto__informacion">
                         <p class="producto__nombre">SHOPIFY</p>
                         <p class="producto__precio">$25000</p>
@@ -45,8 +44,8 @@
                 </a>
             </div> 
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/4.jpg" alt="imagen camisa mercado libre">
+                <a href="producto.html" tabindex="7" aria-label="Ver producto Camisa Mercado Libre">
+                    <img class="producto__imagen" src="img/4.jpg" alt="Camisa con el logotipo de Mercado Libre">
                     <div class="producto__informacion">
                         <p class="producto__nombre">MERCADO LIBRE</p>
                         <p class="producto__precio">$20000</p>
@@ -54,8 +53,8 @@
                  </a>
             </div> 
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/3.jpg" alt="imagen camisa tienda nube">
+                <a href="producto.html" tabindex="8" aria-label="Ver producto Camisa Tienda Nube">
+                    <img class="producto__imagen" src="img/3.jpg" alt="Camisa con el logotipo de Tienda Nube">
                     <div class="producto__informacion">
                         <p class="producto__nombre">TIENDA NUBE</p>
                         <p class="producto__precio">$25000</p>
@@ -63,8 +62,8 @@
                 </a>
             </div>
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/5.jpg" alt="imagen camisa linux">
+                <a href="producto.html" tabindex="9" aria-label="Ver producto Camisa Linux">
+                    <img class="producto__imagen" src="img/5.jpg" alt="Camisa con el logotipo de Linux">
                     <div class="producto__informacion">
                         <p class="producto__nombre">LINUX</p>
                         <p class="producto__precio">$25000</p>
@@ -72,8 +71,8 @@
                 </a>
             </div>
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/6.jpg" alt="imagen camisa google adds">
+                <a href="producto.html" tabindex="10" aria-label="Ver producto Camisa Google Ads">
+                    <img class="producto__imagen" src="img/6.jpg" alt="Camisa con el logotipo de Google Ads">
                     <div class="producto__informacion">
                         <p class="producto__nombre">GOOGLE ADS</p>
                         <p class="producto__precio">$25800</p>
@@ -81,8 +80,8 @@
                 </a>
             </div>
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/14.webp" alt="imagen camisa chatgpt">
+                <a href="producto.html" tabindex="11" aria-label="Ver producto Camisa Chat GPT">
+                    <img class="producto__imagen" src="img/14.webp" alt="Camisa con el logotipo de ChatGPT">
                     <div class="producto__informacion">
                         <p class="producto__nombre">CHAT GPT</p>
                         <p class="producto__precio">$20000</p>
@@ -90,8 +89,8 @@
                 </a>
             </div> 
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/13.jpg" alt="imagen camisa github">
+                <a href="producto.html" tabindex="12" aria-label="Ver producto Camisa Github">
+                    <img class="producto__imagen" src="img/13.jpg" alt="Camisa con el logotipo de Github">
                     <div class="producto__informacion">
                         <p class="producto__nombre">Github</p>
                         <p class="producto__precio">$35000</p>
@@ -99,8 +98,8 @@
                 </a>
             </div>
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/7.png" alt="imagen camisa node js">
+                <a href="producto.html" tabindex="13" aria-label="Ver producto Camisa Node JS">
+                    <img class="producto__imagen" src="img/7.png" alt="Camisa con el logotipo de Node JS">
                     <div class="producto__informacion">
                         <p class="producto__nombre">NODE</p>
                         <p class="producto__precio">$25000</p>
@@ -108,8 +107,8 @@
                 </a>
             </div>
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/9.jpg" alt="imagen camisa jira software">
+                <a href="producto.html" tabindex="14" aria-label="Ver producto Camisa Jira Software">
+                    <img class="producto__imagen" src="img/9.jpg" alt="Camisa con el logotipo de Jira Software">
                     <div class="producto__informacion">
                         <p class="producto__nombre">JIRA</p>
                         <p class="producto__precio">$25000</p>
@@ -117,8 +116,8 @@
                 </a>
             </div> 
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/8.webp" alt="imagen camisa java script">
+                <a href="producto.html" tabindex="15" aria-label="Ver producto Camisa JavaScript">
+                    <img class="producto__imagen" src="img/8.webp" alt="Camisa con el logotipo de JavaScript">
                     <div class="producto__informacion">
                         <p class="producto__nombre">JAVASCRIPT</p>
                         <p class="producto__precio">$25000</p>
@@ -126,8 +125,8 @@
                 </a>
             </div>
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/10.jpg" alt="imagen camisa figma">
+                <a href="producto.html" tabindex="16" aria-label="Ver producto Camisa Figma">
+                    <img class="producto__imagen" src="img/10.jpg" alt="Camisa con el logotipo de Figma">
                     <div class="producto__informacion">
                         <p class="producto__nombre">FIGMA</p>
                         <p class="producto__precio">$25000</p>
@@ -135,8 +134,8 @@
                 </a>
             </div>
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/15.jpg" alt="imagen camisa programa visual studio code">
+                <a href="producto.html" tabindex="17" aria-label="Ver producto Camisa Visual Studio Code">
+                    <img class="producto__imagen" src="img/15.jpg" alt="Camisa con el logotipo de Visual Studio Code">
                     <div class="producto__informacion">
                         <p class="producto__nombre">VS CODE</p>
                         <p class="producto__precio">$25000</p>
@@ -144,8 +143,8 @@
                 </a>
             </div>
             <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/12.jpg" alt="imagen camisa w3c">
+                <a href="producto.html" tabindex="18" aria-label="Ver producto Camisa facebook ads">
+                    <img class="producto__imagen" src="img/12.jpg" alt="Camisa con el logotipo de facebook ads">
                     <div class="producto__informacion">
                         <p class="producto__nombre">FACEBOOK ADS</p>
                         <p class="producto__precio">$25000</p>
@@ -161,6 +160,5 @@
     <footer class="footer">
         <p class="footer__texto">Universidad Nacional de José C. Paz.</p>
     </footer>
-
 </body>
 </html>
